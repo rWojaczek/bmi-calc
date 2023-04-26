@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-text: rgba(255, 255, 255, 0.808);
+  --back-light: rgba(211, 219, 221, 0.801);
+  --back-dark: rgba(7, 102, 126, 0.795);
+  --black: rgb(0, 0, 0);
+}
+
+body {
+  background-color: #d6d4d4;
+  color: var(--black);
+  letter-spacing: 3px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, var(--back-light), var(--back-dark));
+  box-shadow: 0 0 10px 5px rgb(71, 68, 68);
+}
+
+.title {
+  grid-column: 1/-1;
+  text-align: center;
+  font-weight: normal;
+}
+
+.clear {
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  background-color: var(--black);
+  color: var(--light-text);
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.description {
+  grid-row: 3/3;
+}
+
+.result {
+  grid-column: 2/2;
+  grid-row: 3/3;
+}
+
+.modal {
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 70px;
+  background-color: var(--back-light);
+  text-align: center;
+  border: 3px solid var(--black);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dialog_close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  margin-left: 10px;
+}
+
+input {
+  text-align: left;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  background: none;
+  padding: 12px;
+  letter-spacing: 3px;
+  outline: none;
+}
+
+.calculate {
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--black);
+  color: var(--light-text);
+  letter-spacing: 3px;
+}
